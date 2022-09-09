@@ -12,10 +12,10 @@ spring:
     name: microservicecloud-config-dept-client
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cloudDB01
     username: root
-    password: 123456
+    password: 1996122324
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -23,7 +23,7 @@ spring:
       max-wait-millis: 200
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  type-aliases-package: com.lfh.springcloud.entities
   mapper-locations:
     - classpath:mybatis/mapper/**/*.xml
 eureka:
@@ -47,10 +47,10 @@ spring:
     name: microservicecloud-config-dept-client
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/cloudDB02
     username: root
-    password: 123456
+    password: 1996122324
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -58,7 +58,7 @@ spring:
       max-wait-millis: 200
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  type-aliases-package: com.lfh.springcloud.entities
   mapper-locations:
     - classpath:mybatis/mapper/**/*.xml
 eureka:
@@ -70,6 +70,6 @@ eureka:
     prefer-ip-address: true
 info:
   app.name: lfh-microservicecloud-springcloudconfig02
-  company.name: www.atguigu.com
+  company.name: www.lfh.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
